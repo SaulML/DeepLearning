@@ -16,7 +16,7 @@ from sklearn.model_selection import train_test_split
 
 img_path = '/home/saul/pythontraining/imageClassification/handwriting2.jpg'
 img = image.load_img(img_path, target_size=(224, 224)) # load image
-x = image.img_to_array(img)
+x = image.img_to_array(img) # convert image to array
 print (x.shape)
 x = np.expand_dims(x, axis=0)
 print (x.shape)
