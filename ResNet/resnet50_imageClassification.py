@@ -15,7 +15,7 @@ from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
 
 img_path = '/home/saul/pythontraining/imageClassification/handwriting2.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(224, 224)) # load image
 x = image.img_to_array(img)
 print (x.shape)
 x = np.expand_dims(x, axis=0)
